@@ -1,0 +1,915 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- =========================
+       BASIC SEO
+  ========================== -->
+
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+
+  <title>
+    The Flow Insight — Intelligence Infrastructure for the AI Age
+  </title>
+
+  <meta
+    name="description"
+    content="Independent intelligence infrastructure focused on AI systems, capital flows, infrastructure and geopolitical transitions. The operational layer behind The Flow Insight ecosystem."
+  />
+
+  <meta
+    name="keywords"
+    content="AI geopolitics, narrative intelligence, AI infrastructure, capital flows, geopolitical intelligence, system mapping, AI economy, strategic intelligence"
+  />
+
+  <!-- =========================
+       OPEN GRAPH
+  ========================== -->
+
+  <meta
+    property="og:title"
+    content="The Flow Insight — Intelligence Infrastructure for the AI Age"
+  />
+
+  <meta
+    property="og:description"
+    content="Independent intelligence infrastructure focused on AI systems, capital flows, infrastructure and geopolitical transitions."
+  />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://company.theflowinsight.com" />
+
+  <!-- =========================
+       FONTS
+  ========================== -->
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Cormorant+Garamond:wght@400;500;600&display=swap"
+    rel="stylesheet"
+  >
+
+  <!-- =========================
+       STYLES
+  ========================== -->
+
+  <style>
+
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    :root{
+      --bg:#f7f5f2;
+      --text:#111111;
+      --muted:rgba(0,0,0,0.68);
+      --soft:rgba(0,0,0,0.42);
+      --line:rgba(0,0,0,0.07);
+      --accent:#ff5c73;
+    }
+
+    html{
+      scroll-behavior:smooth;
+    }
+
+    body{
+      background:var(--bg);
+      color:var(--text);
+      font-family:'Inter',sans-serif;
+      overflow-x:hidden;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    a{
+      text-decoration:none;
+      color:inherit;
+      transition:0.25s ease;
+    }
+
+    img{
+      max-width:100%;
+      display:block;
+    }
+
+    .container{
+      width:100%;
+      max-width:1380px;
+      margin:auto;
+      padding:0 52px;
+    }
+
+    /* =========================
+       NAVBAR
+    ========================== */
+
+    .navbar{
+      width:100%;
+      border-bottom:1px solid var(--line);
+    }
+
+    .navbar-inner{
+      height:82px;
+
+      display:flex;
+      align-items:center;
+      justify-content:space-between;
+    }
+
+    .logo{
+      font-size:17px;
+      font-weight:600;
+      letter-spacing:-0.2px;
+    }
+
+    .logo span{
+      color:var(--accent);
+    }
+
+    .nav-links{
+      display:flex;
+      align-items:center;
+      gap:34px;
+
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:1.5px;
+      color:var(--soft);
+    }
+
+    .nav-links a:hover{
+      color:var(--accent);
+    }
+
+    /* =========================
+       HERO
+    ========================== */
+
+    .hero{
+      padding:155px 0 135px;
+      border-bottom:1px solid var(--line);
+    }
+
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.35fr 0.7fr;
+      gap:120px;
+      align-items:end;
+    }
+
+    .eyebrow{
+      font-size:12px;
+      letter-spacing:2px;
+      text-transform:uppercase;
+      color:var(--accent);
+      margin-bottom:30px;
+    }
+
+    .hero-title{
+      font-family:'Cormorant Garamond',serif;
+      font-size:84px;
+      line-height:0.94;
+      letter-spacing:-3px;
+      font-weight:500;
+
+      max-width:920px;
+      margin-bottom:42px;
+    }
+
+    .hero-description{
+      max-width:670px;
+
+      font-size:19px;
+      line-height:1.9;
+      color:var(--muted);
+    }
+
+    .hero-side{
+      border-left:1px solid var(--line);
+      padding-left:42px;
+      padding-bottom:10px;
+    }
+
+    .hero-side h4{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      color:var(--soft);
+
+      margin-bottom:28px;
+    }
+
+    .hero-side ul{
+      list-style:none;
+    }
+
+    .hero-side li{
+      margin-bottom:18px;
+
+      font-size:16px;
+      color:var(--muted);
+    }
+
+    /* =========================
+       GENERAL SECTION
+    ========================== */
+
+    .section{
+      padding:120px 0;
+      border-bottom:1px solid var(--line);
+    }
+
+    .section-grid{
+      display:grid;
+      grid-template-columns:0.55fr 1.45fr;
+      gap:90px;
+    }
+
+    .section-label{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      color:var(--accent);
+    }
+
+    .section-content h2{
+      font-family:'Cormorant Garamond',serif;
+      font-size:58px;
+      line-height:1;
+      letter-spacing:-2px;
+      font-weight:500;
+
+      margin-bottom:34px;
+      max-width:900px;
+    }
+
+    .section-content p{
+      max-width:760px;
+
+      font-size:18px;
+      line-height:1.9;
+      color:var(--muted);
+
+      margin-bottom:24px;
+    }
+
+    /* =========================
+       CORE HUB
+    ========================== */
+
+    .core-links{
+      display:flex;
+      flex-direction:column;
+      gap:22px;
+
+      margin-top:44px;
+    }
+
+    .core-links a{
+      width:fit-content;
+
+      font-size:16px;
+      color:var(--muted);
+    }
+
+    .core-links a:hover{
+      color:var(--accent);
+    }
+
+    /* =========================
+       STRUCTURE
+    ========================== */
+
+    .structure-list{
+      margin-top:58px;
+      border-top:1px solid var(--line);
+    }
+
+    .structure-item{
+      padding:36px 0;
+
+      border-bottom:1px solid var(--line);
+
+      display:grid;
+      grid-template-columns:0.7fr 1.3fr;
+      gap:48px;
+    }
+
+    .structure-item h3{
+      font-size:14px;
+      text-transform:uppercase;
+      letter-spacing:1.6px;
+      font-weight:600;
+    }
+
+    .structure-item p{
+      margin-bottom:0;
+
+      font-size:17px;
+      line-height:1.9;
+    }
+
+    /* =========================
+       DISTRIBUTION
+    ========================== */
+
+    .distribution-group{
+      margin-top:54px;
+    }
+
+    .distribution-group h3{
+      font-size:12px;
+      text-transform:uppercase;
+      letter-spacing:2px;
+      color:var(--soft);
+
+      margin-bottom:26px;
+    }
+
+    .distribution-links{
+      display:grid;
+      grid-template-columns:repeat(3,1fr);
+      gap:18px;
+    }
+
+    .distribution-links.social{
+      grid-template-columns:repeat(2,1fr);
+    }
+
+    .distribution-links a{
+      padding:22px 24px;
+
+      border:1px solid var(--line);
+      background:rgba(255,255,255,0.28);
+
+      font-size:15px;
+      color:var(--muted);
+    }
+
+    .distribution-links a:hover{
+      border-color:rgba(255,92,115,0.22);
+      color:var(--accent);
+    }
+
+    /* =========================
+       CONTACT
+    ========================== */
+
+    .contact-links{
+      display:flex;
+      flex-direction:column;
+      gap:18px;
+
+      margin-top:40px;
+    }
+
+    .contact-links a{
+      width:fit-content;
+
+      font-size:16px;
+      color:var(--muted);
+    }
+
+    .contact-links a:hover{
+      color:var(--accent);
+    }
+
+    /* =========================
+       FOOTER
+    ========================== */
+
+    footer{
+      padding:42px 0 54px;
+    }
+
+    .footer-inner{
+      display:flex;
+      flex-direction:column;
+      gap:14px;
+    }
+
+    .footer-main{
+      display:flex;
+      justify-content:space-between;
+      align-items:center;
+      gap:20px;
+
+      font-size:14px;
+      color:var(--soft);
+    }
+
+    .footer-right{
+      font-family:'Cormorant Garamond',serif;
+      font-style:italic;
+    }
+
+    .footer-sub{
+      font-size:13px;
+      color:var(--soft);
+    }
+
+    /* =========================
+       RESPONSIVE
+    ========================== */
+
+    @media(max-width:1100px){
+
+      .hero-grid,
+      .section-grid,
+      .structure-item{
+        grid-template-columns:1fr;
+      }
+
+      .hero-side{
+        border-left:none;
+        padding-left:0;
+      }
+
+      .distribution-links{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .distribution-links.social{
+        grid-template-columns:repeat(2,1fr);
+      }
+
+      .hero-title{
+        font-size:62px;
+      }
+
+      .section-content h2{
+        font-size:46px;
+      }
+    }
+
+    @media(max-width:768px){
+
+      .container{
+        padding:0 26px;
+      }
+
+      .nav-links{
+        display:none;
+      }
+
+      .hero{
+        padding:105px 0 95px;
+      }
+
+      .section{
+        padding:88px 0;
+      }
+
+      .hero-title{
+        font-size:46px;
+        letter-spacing:-2px;
+      }
+
+      .section-content h2{
+        font-size:38px;
+      }
+
+      .hero-description,
+      .section-content p{
+        font-size:17px;
+      }
+
+      .distribution-links,
+      .distribution-links.social{
+        grid-template-columns:1fr;
+      }
+
+      .footer-main{
+        flex-direction:column;
+        align-items:flex-start;
+      }
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+  <!-- =========================
+       NAVBAR
+  ========================== -->
+
+  <nav class="navbar">
+
+    <div class="container navbar-inner">
+
+      <div class="logo">
+        THE FLOW INSIGHT<span>•</span>
+      </div>
+
+      <div class="nav-links">
+        <a href="#about">About</a>
+        <a href="#structure">Structure</a>
+        <a href="#distribution">Distribution</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </div>
+
+  </nav>
+
+  <!-- =========================
+       HERO
+  ========================== -->
+
+  <section class="hero">
+
+    <div class="container hero-grid">
+
+      <div>
+
+        <div class="eyebrow">
+          Operational Infrastructure
+        </div>
+
+        <h1 class="hero-title">
+          Independent intelligence infrastructure for the AI age.
+        </h1>
+
+        <p class="hero-description">
+          Supporting narrative intelligence, research and digital distribution across AI, capital flows and geopolitical transitions.
+        </p>
+
+      </div>
+
+      <div class="hero-side">
+
+        <h4>
+          Ecosystem Layers
+        </h4>
+
+        <ul>
+          <li>Research & Intelligence</li>
+          <li>System Mapping</li>
+          <li>Strategic Briefings</li>
+          <li>Distribution Infrastructure</li>
+          <li>Business Operations</li>
+        </ul>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       CORE HUB
+  ========================== -->
+
+  <section class="section">
+
+    <div class="container section-grid">
+
+      <div class="section-label">
+        Core Intelligence Hub
+      </div>
+
+      <div class="section-content">
+
+        <h2>
+          Primary destinations across the intelligence ecosystem.
+        </h2>
+
+        <div class="core-links">
+
+          <a href="https://theflowinsight.com/" target="_blank">
+            Website — theflowinsight.com ↗
+          </a>
+
+          <a href="https://x.com/theflowinsight" target="_blank">
+            X — @theflowinsight ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       ABOUT
+  ========================== -->
+
+  <section class="section" id="about">
+
+    <div class="container section-grid">
+
+      <div class="section-label">
+        About
+      </div>
+
+      <div class="section-content">
+
+        <h2>
+          A digital-native narrative intelligence ecosystem.
+        </h2>
+
+        <p>
+          The Flow Insight operates at the intersection of AI systems, capital flows, infrastructure and geopolitical transitions.
+        </p>
+
+        <p>
+          The platform combines narrative intelligence, system mapping and long-term structural analysis to interpret the emerging AI era.
+        </p>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       STRUCTURE
+  ========================== -->
+
+  <section class="section" id="structure">
+
+    <div class="container section-grid">
+
+      <div class="section-label">
+        Structure
+      </div>
+
+      <div class="section-content">
+
+        <h2>
+          Operational architecture supporting the intelligence ecosystem.
+        </h2>
+
+        <div class="structure-list">
+
+          <div class="structure-item">
+
+            <h3>
+              Research
+            </h3>
+
+            <p>
+              Strategic reports, geopolitical analysis, system maps and long-term intelligence research.
+            </p>
+
+          </div>
+
+          <div class="structure-item">
+
+            <h3>
+              Intelligence
+            </h3>
+
+            <p>
+              Narrative intelligence focused on AI, capital flows, infrastructure transitions and global power structures.
+            </p>
+
+          </div>
+
+          <div class="structure-item">
+
+            <h3>
+              Distribution
+            </h3>
+
+            <p>
+              Multi-platform publishing and digital distribution infrastructure extending the reach of the ecosystem.
+            </p>
+
+          </div>
+
+          <div class="structure-item">
+
+            <h3>
+              Operations
+            </h3>
+
+            <p>
+              Partnerships, sponsorships, advisory coordination, legal structure and institutional communication.
+            </p>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       DISTRIBUTION
+  ========================== -->
+
+  <section class="section" id="distribution">
+
+    <div class="container section-grid">
+
+      <div class="section-label">
+        Distribution Ecosystem
+      </div>
+
+      <div class="section-content">
+
+        <h2>
+          Publishing, audience and social distribution infrastructure.
+        </h2>
+
+        <p>
+          Supporting multi-platform intelligence distribution and long-term audience development across the ecosystem.
+        </p>
+
+        <!-- Publishing -->
+
+        <div class="distribution-group">
+
+          <h3>
+            Publishing & Audience
+          </h3>
+
+          <div class="distribution-links">
+
+            <a href="https://medium.com/@theflowinsight" target="_blank">
+              Medium ↗
+            </a>
+
+            <a href="https://substack.com/@theflowinsight" target="_blank">
+              Substack ↗
+            </a>
+
+            <a href="https://www.patreon.com/cw/theflowinsight" target="_blank">
+              Patreon ↗
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- Social -->
+
+        <div class="distribution-group">
+
+          <h3>
+            Social Distribution
+          </h3>
+
+          <div class="distribution-links social">
+
+            <a href="https://youtube.com/@theflowinsight" target="_blank">
+              YouTube ↗
+            </a>
+
+            <a href="https://tiktok.com/@theflowinsight" target="_blank">
+              TikTok ↗
+            </a>
+
+            <a href="https://facebook.com/theflowinsight" target="_blank">
+              Facebook ↗
+            </a>
+
+            <a href="https://instagram.com/theflowinsight" target="_blank">
+              Instagram ↗
+            </a>
+
+            <a href="https://threads.com/@theflowinsight" target="_blank">
+              Threads ↗
+            </a>
+
+            <a href="https://pinterest.com/theflowinsight" target="_blank">
+              Pinterest ↗
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       CONTACT
+  ========================== -->
+
+  <section class="section" id="contact">
+
+    <div class="container section-grid">
+
+      <div class="section-label">
+        Partnerships
+      </div>
+
+      <div class="section-content">
+
+        <h2>
+          Strategic inquiries & institutional communication.
+        </h2>
+
+        <p>
+          For partnerships, sponsorships, research collaboration, media inquiries and operational communication.
+        </p>
+
+        <div class="contact-links">
+
+          <a href="mailto:theflowinsight@gmail.com">
+            theflowinsight@gmail.com
+          </a>
+
+          <a href="https://theflowinsight.com/" target="_blank">
+            theflowinsight.com ↗
+          </a>
+
+          <a href="https://x.com/theflowinsight" target="_blank">
+            X — @theflowinsight ↗
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       LEGAL
+  ========================== -->
+
+  <section class="section">
+
+    <div class="container section-grid">
+
+      <div class="section-label">
+        Legal
+      </div>
+
+      <div class="section-content">
+
+        <h2>
+          Legal & entity information.
+        </h2>
+
+        <div class="contact-links">
+
+          <a href="#">
+            Privacy Policy
+          </a>
+
+          <a href="#">
+            Terms & Conditions
+          </a>
+
+          <a href="#">
+            Entity Information
+          </a>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+  <!-- =========================
+       FOOTER
+  ========================== -->
+
+  <footer>
+
+    <div class="container footer-inner">
+
+      <div class="footer-main">
+
+        <div>
+          © 2026 The Flow Insight
+        </div>
+
+        <div class="footer-right">
+          Independent Narrative Intelligence Platform
+        </div>
+
+      </div>
+
+      <div class="footer-sub">
+        The operational layer behind The Flow Insight ecosystem.
+      </div>
+
+    </div>
+
+  </footer>
+
+</body>
+</html>
