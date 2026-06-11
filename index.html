@@ -1,7 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Google tag (gtag.js) -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-557RC9QFFS"></script>
 <script>
   window.dataLayer = window.dataLayer || [];
@@ -10,723 +12,296 @@
 
   gtag('config', 'G-557RC9QFFS');
 </script>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-
-<title>
-The Flow Insight — Intelligence Infrastructure
-</title>
-
-<meta
-name="description"
-content="Independent intelligence infrastructure focused on AI systems, capital flows and geopolitical transitions."
-/>
-
-<meta
-name="keywords"
-content="AI geopolitics, narrative intelligence, AI infrastructure, capital flows, geopolitical intelligence, system mapping, strategic intelligence"
-/>
-
-<meta
-property="og:title"
-content="The Flow Insight — Intelligence Infrastructure"
-/>
-
-<meta
-property="og:description"
-content="Independent intelligence infrastructure focused on AI systems, capital flows and geopolitical transitions."
-/>
-
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://company.theflowinsight.com" />
+<title>The Flow Insight — Operational Infrastructure</title>
+<meta name="description" content="The operational platform behind The Flow Insight ecosystem.">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-<link
-href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600&display=swap"
-rel="stylesheet"
-/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500&family=Cormorant+Garamond:wght@400;500;600&display=swap" rel="stylesheet">
 
 <style>
-
-*{
-  margin:0;
-  padding:0;
-  box-sizing:border-box;
-}
-
+*{margin:0;padding:0;box-sizing:border-box}
 :root{
-  --bg:#f7f5f2;
-  --text:#111111;
-  --muted:rgba(0,0,0,0.68);
-  --soft:rgba(0,0,0,0.34);
-  --line:rgba(0,0,0,0.055);
-  --accent:#ff5c73;
+--bg:#f7f5f2;
+--text:#111;
+--muted:rgba(0,0,0,.65);
+--soft:rgba(0,0,0,.42);
+--line:rgba(0,0,0,.07);
+--accent:#ff5c73;
 }
-
-html{
-  scroll-behavior:smooth;
-}
-
 body{
-  background:var(--bg);
-  color:var(--text);
-
-  font-family:'Inter',sans-serif;
-
-  -webkit-font-smoothing:antialiased;
-  text-rendering:optimizeLegibility;
-
-  overflow-x:hidden;
-
-  letter-spacing:-0.01em;
+background:var(--bg);
+color:var(--text);
+font-family:'Inter',sans-serif;
+-webkit-font-smoothing:antialiased;
+text-rendering:optimizeLegibility;
 }
-
-a{
-  text-decoration:none;
-  color:inherit;
-  transition:0.22s ease;
-}
-
-a:hover{
-  color:var(--accent);
-}
-
 .container{
-  width:100%;
-  max-width:1440px;
-  margin:auto;
-  padding:0 72px;
+max-width:1440px;
+margin:auto;
+padding:0 80px;
 }
+a{text-decoration:none;color:inherit}
 
-/* =========================
-   NAVBAR
-========================== */
-
-.navbar{
-  padding:30px 0;
+nav{
+padding:26px 0;
+border-bottom:1px solid var(--line);
 }
-
 .nav-inner{
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
+display:flex;
+justify-content:space-between;
+align-items:center;
 }
-
 .logo{
-  font-size:13px;
-  font-weight:500;
-  letter-spacing:0.4px;
+font-size:14px;
+font-weight:500;
+letter-spacing:.2px;
 }
-
-.logo span{
-  color:var(--accent);
+.logo span{color:var(--accent)}
+.menu{
+display:flex;
+gap:28px;
+font-size:13px;
+color:var(--soft);
 }
-
-.nav-links{
-  display:flex;
-  gap:24px;
-
-  font-size:10px;
-  letter-spacing:0.3px;
-
-  color:rgba(0,0,0,0.36);
-}
-
-/* =========================
-   HERO
-========================== */
 
 .hero{
-  padding:132px 0 168px;
+padding:110px 0 95px;
 }
-
-.hero-grid{
-  display:grid;
-  grid-template-columns:1.35fr 0.65fr;
-  gap:82px;
-  align-items:end;
-}
-
-.hero-left{
-  max-width:680px;
-}
-
 .eyebrow{
-  font-size:10px;
-  letter-spacing:2.2px;
-  text-transform:uppercase;
-
-  color:rgba(0,0,0,0.38);
-
-  margin-bottom:30px;
+font-size:11px;
+letter-spacing:2px;
+text-transform:uppercase;
+color:var(--soft);
+margin-bottom:22px;
 }
-
-.hero-title{
-  font-family:'Cormorant Garamond',serif;
-
-  font-size:74px;
-  line-height:1.02;
-  letter-spacing:-2.2px;
-  font-weight:500;
-
-  margin-bottom:34px;
+.hero h1{
+font-family:'Cormorant Garamond',serif;
+font-size:76px;
+font-weight:500;
+line-height:0.98;
+letter-spacing:-2px;
+max-width:760px;
+margin-bottom:24px;
 }
-
-.hero-description{
-  max-width:540px;
-
-  font-size:16px;
-  line-height:2;
-
-  color:rgba(0,0,0,0.66);
+.hero p{
+font-size:17px;
+line-height:1.9;
+max-width:620px;
+color:var(--muted);
 }
-
-.hero-right{
-  padding-bottom:8px;
-}
-
-.hero-meta{
-  display:flex;
-  flex-direction:column;
-  gap:14px;
-}
-
-.hero-meta div{
-  font-size:12px;
-  line-height:1.9;
-
-  color:rgba(0,0,0,0.34);
-}
-
-/* =========================
-   SECTION
-========================== */
 
 .section{
-  padding:92px 0;
-  border-top:1px solid rgba(0,0,0,0.055);
+padding:64px 0;
+border-top:1px solid var(--line);
+}
+.grid{
+display:grid;
+grid-template-columns:180px minmax(0,720px);
+gap:52px;
+}
+.label{
+font-size:12px;
+letter-spacing:1.8px;
+text-transform:uppercase;
+color:var(--soft);
+}
+.content h2{
+font-family:'Cormorant Garamond',serif;
+font-size:48px;
+font-weight:500;
+line-height:1.05;
+letter-spacing:-1px;
+margin-bottom:18px;
+}
+.content p{
+font-size:16px;
+line-height:1.95;
+color:var(--muted);
+margin-bottom:14px;
 }
 
-.section-grid{
-  display:grid;
-  grid-template-columns:0.42fr 1.58fr;
-  gap:76px;
+.break-section{
+padding:52px 0;
+}
+.quote{
+font-family:'Cormorant Garamond',serif;
+font-size:30px;
+line-height:1.45;
+max-width:460px;
+color:rgba(0,0,0,.8);
+}
+.quote div:last-child{
+margin-top:6px;
 }
 
-.section-label{
-  font-size:10px;
-  letter-spacing:2px;
-  text-transform:uppercase;
-
-  color:rgba(0,0,0,0.36);
+.group{
+margin-top:26px;
+}
+.group-title{
+font-size:11px;
+letter-spacing:1.5px;
+text-transform:uppercase;
+color:var(--soft);
+margin-bottom:14px;
+}
+.link-list a{
+display:block;
+margin-bottom:10px;
+font-size:16px;
+color:var(--muted);
 }
 
-.section-content{
-  max-width:700px;
+.ops div{
+font-size:16px;
+line-height:2;
+color:var(--muted);
 }
-
-.section-content h2{
-  font-family:'Cormorant Garamond',serif;
-
-  font-size:50px;
-  line-height:1.04;
-  letter-spacing:-1.6px;
-  font-weight:500;
-
-  margin-bottom:28px;
-}
-
-.section-content p{
-  font-size:16px;
-  line-height:2;
-
-  color:rgba(0,0,0,0.66);
-
-  margin-bottom:22px;
-}
-
-/* =========================
-   NETWORK
-========================== */
-
-.network-links{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-
-  margin-top:42px;
-}
-
-.network-links a{
-  width:fit-content;
-
-  font-size:15px;
-  line-height:1.85;
-
-  color:rgba(0,0,0,0.68);
-}
-
-/* =========================
-   DISTRIBUTION
-========================== */
-
-.distribution-text{
-  max-width:640px;
-
-  font-size:15px;
-  line-height:2.05;
-
-  color:rgba(0,0,0,0.66);
-}
-
-/* =========================
-   OPERATIONS
-========================== */
-
-.operations{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-
-  margin-top:34px;
-}
-
-.operations div{
-  font-size:15px;
-  line-height:1.9;
-
-  color:rgba(0,0,0,0.66);
-}
-
-/* =========================
-   CONTACT
-========================== */
-
-.contact-links{
-  display:flex;
-  flex-direction:column;
-  gap:16px;
-
-  margin-top:38px;
-}
-
-.contact-links a{
-  width:fit-content;
-
-  font-size:15px;
-  line-height:1.85;
-
-  color:rgba(0,0,0,0.68);
-}
-
-/* =========================
-   FOOTER
-========================== */
 
 footer{
-  padding:34px 0 48px;
-  border-top:1px solid rgba(0,0,0,0.055);
+padding:28px 0 40px;
+border-top:1px solid var(--line);
 }
-
-.footer-inner{
-  display:flex;
-  justify-content:space-between;
-  align-items:flex-end;
-  gap:30px;
+.footer{
+display:flex;
+justify-content:space-between;
+gap:24px;
 }
-
-.footer-main{
-  font-size:11px;
-  color:rgba(0,0,0,0.34);
+.footer-left{
+font-size:12px;
+line-height:1.8;
+color:var(--soft);
 }
-
-.footer-sub{
-  margin-top:8px;
-
-  font-size:11px;
-  line-height:1.8;
-
-  color:rgba(0,0,0,0.34);
-}
-
 .footer-right{
-  font-family:'Cormorant Garamond',serif;
-
-  font-size:16px;
-  font-style:italic;
-
-  color:rgba(0,0,0,0.34);
-}
-
-/* =========================
-   MOBILE
-========================== */
-
-@media(max-width:1100px){
-
-  .container{
-    padding:0 42px;
-  }
-
-  .hero-grid,
-  .section-grid{
-    grid-template-columns:1fr;
-    gap:52px;
-  }
-
-  .hero{
-    padding:104px 0 118px;
-  }
-
-  .hero-title{
-    font-size:58px;
-    line-height:1.03;
-  }
-
-  .section{
-    padding:78px 0;
-  }
-
-  .section-content h2{
-    font-size:42px;
-  }
-
+font-family:'Cormorant Garamond',serif;
+font-size:18px;
+color:var(--soft);
 }
 
 @media(max-width:768px){
-
-  .container{
-    padding:0 24px;
-  }
-
-  .nav-links{
-    display:none;
-  }
-
-  .hero{
-    padding:78px 0 92px;
-  }
-
-  .hero-grid{
-    gap:42px;
-  }
-
-  .hero-left{
-    max-width:100%;
-  }
-
-  .hero-title{
-    font-size:42px;
-    line-height:1.05;
-    letter-spacing:-1.2px;
-
-    max-width:100%;
-    margin-bottom:24px;
-  }
-
-  .hero-description{
-    max-width:100%;
-
-    font-size:15px;
-    line-height:1.92;
-  }
-
-  .hero-meta div{
-    font-size:11px;
-  }
-
-  .section{
-    padding:68px 0;
-  }
-
-  .section-grid{
-    gap:28px;
-  }
-
-  .section-content{
-    max-width:100%;
-  }
-
-  .section-content h2{
-    font-size:34px;
-    line-height:1.08;
-    letter-spacing:-0.8px;
-
-    margin-bottom:20px;
-  }
-
-  .section-content p,
-  .distribution-text,
-  .operations div,
-  .network-links a,
-  .contact-links a{
-    font-size:14px;
-    line-height:1.9;
-  }
-
-  .network-links,
-  .operations,
-  .contact-links{
-    margin-top:26px;
-  }
-
-  .footer-inner{
-    flex-direction:column;
-    align-items:flex-start;
-    gap:16px;
-  }
-
-  .footer-right{
-    font-size:15px;
-  }
-
+.container{padding:0 24px}
+.menu{display:none}
+.hero{padding:72px 0 68px}
+.hero h1{font-size:44px;max-width:100%}
+.hero p{font-size:15px}
+.grid{grid-template-columns:1fr;gap:16px}
+.section{padding:48px 0}
+.content h2{font-size:34px}
+.quote{font-size:24px}
+.footer{flex-direction:column}
 }
-
 </style>
-
 </head>
-
 <body>
 
-<nav class="navbar">
-
-  <div class="container nav-inner">
-
-    <div class="logo">
-      THE FLOW INSIGHT<span>•</span>
-    </div>
-
-    <div class="nav-links">
-      <a href="#about">About</a>
-      <a href="#network">Network</a>
-      <a href="#operations">Operations</a>
-      <a href="#contact">Contact</a>
-    </div>
-
-  </div>
-
+<nav>
+<div class="container nav-inner">
+<div class="logo">THE FLOW INSIGHT<span>•</span></div>
+<div class="menu">
+<a href="#">About</a>
+<a href="#">Network</a>
+<a href="#">Operations</a>
+<a href="#">Contact</a>
+</div>
+</div>
 </nav>
 
 <section class="hero">
-
-  <div class="container hero-grid">
-
-    <div class="hero-left">
-
-      <div class="eyebrow">
-        Independent Operational Infrastructure
-      </div>
-
-      <h1 class="hero-title">
-        Intelligence infrastructure for the AI age.
-      </h1>
-
-      <p class="hero-description">
-        Supporting narrative intelligence, strategic research and digital distribution across AI systems, capital flows and geopolitical transitions.
-      </p>
-
-    </div>
-
-    <div class="hero-right">
-
-      <div class="hero-meta">
-
-        <div>Research & Intelligence</div>
-        <div>Narrative Systems</div>
-        <div>Strategic Briefings</div>
-        <div>Distribution Infrastructure</div>
-        <div>Operational Layer</div>
-
-      </div>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="section" id="about">
-
-  <div class="container section-grid">
-
-    <div class="section-label">
-      About
-    </div>
-
-    <div class="section-content">
-
-      <h2>
-        A digital-native narrative intelligence ecosystem.
-      </h2>
-
-      <p>
-        The Flow Insight operates at the intersection of AI systems, infrastructure, capital flows and geopolitical transitions.
-      </p>
-
-      <p>
-        The platform combines narrative intelligence, system mapping and long-term structural analysis to interpret the structural shifts shaping the emerging AI era.
-      </p>
-
-    </div>
-
-  </div>
-
-</section>
-
-<section class="section" id="network">
-
-  <div class="container section-grid">
-
-    <div class="section-label">
-      Network
-    </div>
-
-    <div class="section-content">
-
-      <h2>
-        Core destinations across the ecosystem.
-      </h2>
-
-      <div class="network-links">
-
-        <a href="https://theflowinsight.com/" target="_blank">
-          theflowinsight.com ↗
-        </a>
-
-        <a href="https://x.com/theflowinsight" target="_blank">
-          x.com/theflowinsight ↗
-        </a>
-
-        <a href="https://medium.com/@theflowinsight" target="_blank">
-          Medium Publication ↗
-        </a>
-
-        <a href="https://substack.com/@theflowinsight" target="_blank">
-          Substack ↗
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
+<div class="container">
+<div class="eyebrow">Independent Operational Infrastructure</div>
+<h1>Understanding structural transitions in the AI era.</h1>
+<p>Supporting research, narrative intelligence and digital publishing across AI systems, capital flows and geopolitical change.</p>
+</div>
 </section>
 
 <section class="section">
-
-  <div class="container section-grid">
-
-    <div class="section-label">
-      Distribution
-    </div>
-
-    <div class="section-content">
-
-      <h2>
-        Multi-platform publishing infrastructure.
-      </h2>
-
-      <div class="distribution-text">
-        Publishing and distribution across independent and social platforms supporting long-term audience development, narrative reach and intelligence circulation.
-      </div>
-
-    </div>
-
-  </div>
-
+<div class="container grid">
+<div class="label">About</div>
+<div class="content">
+<h2>A digital-native intelligence ecosystem.</h2>
+<p>The Flow Insight explores the intersection of AI systems, capital flows, infrastructure and geopolitical transitions.</p>
+<p>Through narrative intelligence and long-term structural analysis, the platform seeks to make complex transitions more understandable and more legible.</p>
+</div>
+</div>
 </section>
 
-<section class="section" id="operations">
-
-  <div class="container section-grid">
-
-    <div class="section-label">
-      Operations
-    </div>
-
-    <div class="section-content">
-
-      <h2>
-        Strategic operations & institutional communication.
-      </h2>
-
-      <div class="operations">
-
-        <div>Strategic partnerships</div>
-        <div>Research collaboration</div>
-        <div>Sponsorship coordination</div>
-        <div>Media inquiries</div>
-        <div>Advisory communication</div>
-
-      </div>
-
-    </div>
-
-  </div>
-
+<section class="break-section">
+<div class="container">
+<div class="quote">
+<div>Social attracts attention.</div>
+<div>Intelligence retains gravity.</div>
+</div>
+</div>
 </section>
 
-<section class="section" id="contact">
+<section class="section">
+<div class="container grid">
+<div class="label">Network</div>
+<div class="content">
+<h2>Core destinations across the ecosystem.</h2>
 
-  <div class="container section-grid">
+<div class="group">
+<div class="group-title">Core Network</div>
+<div class="link-list">
+<a href="https://theflowinsight.com">theflowinsight.com ↗</a>
+<a href="https://x.com/theflowinsight">@theflowinsight ↗</a>
+</div>
+</div>
 
-    <div class="section-label">
-      Contact
-    </div>
+<div class="group">
+<div class="group-title">Publishing</div>
+<div class="link-list">
+<a href="https://medium.com/@theflowinsight">Medium ↗</a>
+<a href="https://substack.com/@theflowinsight">Substack ↗</a>
+<a href="https://www.patreon.com/cw/theflowinsight">Patreon ↗</a>
+</div>
+</div>
 
-    <div class="section-content">
+</div>
+</div>
+</section>
 
-      <h2>
-        Official communication channels.
-      </h2>
+<section class="section">
+<div class="container grid">
+<div class="label">Operations</div>
+<div class="content">
+<h2>Strategic operations & institutional communication.</h2>
+<div class="ops">
+<div>Strategic partnerships</div>
+<div>Research collaboration</div>
+<div>Media inquiries</div>
+<div>Sponsorships</div>
+<div>Advisory communication</div>
+</div>
+</div>
+</div>
+</section>
 
-      <div class="contact-links">
-
-        <a href="mailto:theflowinsight@gmail.com">
-          theflowinsight@gmail.com
-        </a>
-
-        <a href="https://theflowinsight.com/" target="_blank">
-          theflowinsight.com ↗
-        </a>
-
-        <a href="https://x.com/theflowinsight" target="_blank">
-          x.com/theflowinsight ↗
-        </a>
-
-      </div>
-
-    </div>
-
-  </div>
-
+<section class="section">
+<div class="container grid">
+<div class="label">Contact</div>
+<div class="content">
+<h2>Official communication channels.</h2>
+<div class="link-list">
+<a href="mailto:theflowinsight@gmail.com">theflowinsight@gmail.com</a>
+<a href="https://theflowinsight.com">theflowinsight.com ↗</a>
+<a href="https://x.com/theflowinsight">x.com/theflowinsight ↗</a>
+</div>
+</div>
+</div>
 </section>
 
 <footer>
-
-  <div class="container footer-inner">
-
-    <div>
-
-      <div class="footer-main">
-        © 2026 The Flow Insight
-      </div>
-
-      <div class="footer-sub">
-        Independent narrative intelligence infrastructure for the AI age.
-      </div>
-
-    </div>
-
-    <div class="footer-right">
-      Operational layer behind The Flow Insight ecosystem.
-    </div>
-
-  </div>
-
+<div class="container footer">
+<div class="footer-left">
+© 2026 The Flow Insight<br>
+Independent narrative intelligence platform.<br>
+Operational infrastructure behind The Flow Insight ecosystem.
+</div>
+<div class="footer-right">
+Narrative intelligence for systemic change.
+</div>
+</div>
 </footer>
 
 </body>
